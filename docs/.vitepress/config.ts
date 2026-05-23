@@ -1,41 +1,33 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'UmiJS 源码深度解析',
-  description: '深入理解 UmiJS 框架设计与实现',
-  
-  base: '/umi-source-code-analysis/',
-
+  description: '深入理解企业级前端框架',
+  head: [
+    ['link', { rel: 'icon', href: '/logo.svg' }]
+  ],
   themeConfig: {
-    logo: {
-      src: '/logo.svg',
-      width: 32,
-      height: 32
-    },
-
+    logo: '/logo.svg',
     nav: [
       { text: '指南', link: '/guide/overview' },
       { text: '架构', link: '/architecture/overview' },
-      { text: '核心', link: '/core/app-service' },
-      { text: '进阶', link: '/advanced/ast-transform' }
+      { text: '核心', link: '/core/app-service' }
     ],
-
     sidebar: {
       '/guide/': [
         {
-          text: '指南篇',
+          text: '指南',
           items: [
             { text: '概览', link: '/guide/overview' },
             { text: '快速开始', link: '/guide/quick-start' },
-            { text: '源码结构', link: '/guide/project-structure' },
+            { text: '项目结构', link: '/guide/project-structure' },
             { text: '调试指南', link: '/guide/debugging' }
           ]
         }
       ],
       '/architecture/': [
         {
-          text: '架构篇',
+          text: '架构',
           items: [
             { text: '整体架构', link: '/architecture/overview' },
             { text: '插件系统', link: '/architecture/plugin-system' },
@@ -47,72 +39,18 @@ export default defineConfig({
       ],
       '/core/': [
         {
-          text: '核心篇',
+          text: '核心模块',
           items: [
             { text: 'App 服务', link: '/core/app-service' },
-            { text: '命令行架构', link: '/core/cli' },
-            { text: '配置加载', link: '/core/config-loading' },
-            { text: '路由生成', link: '/core/route-generation' },
-            { text: 'MFSU 实现', link: '/core/mfsu' },
-            { text: 'Webpack 打包', link: '/core/bundler-webpack' },
-            { text: 'Vite 打包', link: '/core/bundler-vite' },
-            { text: 'ESBuild 打包', link: '/core/bundler-esbuild' },
-            { text: 'React 渲染器', link: '/core/renderer-react' },
-            { text: '插件开发', link: '/core/plugin-development' },
-            { text: '运行时插件', link: '/core/runtime-plugin' },
-            { text: '服务端插件', link: '/core/buildtime-plugin' },
-            { text: '类型系统', link: '/core/type-system' },
-            { text: '工具函数', link: '/core/utils' }
-          ]
-        }
-      ],
-      '/advanced/': [
-        {
-          text: '进阶篇',
-          items: [
-            { text: 'AST 转换', link: '/advanced/ast-transform' },
-            { text: 'Micro-frontend', link: '/advanced/micro-frontend' },
-            { text: '性能优化', link: '/advanced/performance' },
-            { text: '自定义打包器', link: '/advanced/custom-bundler' },
-            { text: '最佳实践与 FAQ', link: '/advanced/best-practices' }
+            { text: 'CLI', link: '/core/cli' },
+            { text: 'MFSU', link: '/core/mfsu' },
+            { text: 'Webpack 打包器', link: '/core/bundler-webpack' },
+            { text: 'Vite 打包器', link: '/core/bundler-vite' },
+            { text: 'ESBuild 打包器', link: '/core/bundler-esbuild' },
+            { text: '插件开发', link: '/core/plugin-development' }
           ]
         }
       ]
-    },
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/umijs/umi' }
-    ],
-
-    search: {
-      provider: 'local',
-      options: {
-        locales: {
-          root: {
-            translations: {
-              button: {
-                buttonText: '搜索',
-                buttonAriaLabel: '搜索文档'
-              },
-              modal: {
-                noResultsText: '无法找到相关结果',
-                resetButtonTitle: '清除查询条件',
-                footer: {
-                  selectText: '选择',
-                  navigateText: '切换'
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  },
-
-  markdown: {
-    theme: {
-      light: 'vitesse-light',
-      dark: 'vitesse-dark'
     }
   }
 })

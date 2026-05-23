@@ -1,0 +1,29 @@
+/* 增大首页hero区域的logo */
+.VPHero .VPImage {
+  width: 120px;
+  height: 120px;
+}
+
+/* 增大导航栏logo */
+.VPNavBarTitle .VPImage {
+  width: 32px;
+  height: 32px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .VPHero .VPImage {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* 增强logo视觉效果 */
+.VPHero .VPImage {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.VPHero .VPImage:hover {
+  transform: scale(1.05);
+}
