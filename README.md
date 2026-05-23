@@ -2,8 +2,6 @@
 
 > 深入理解 UmiJS 框架的核心架构与实现原理
 
-[![Deploy VitePress site to Pages](https://github.com/[username]/umi-source-code-analysis/actions/workflows/deploy.yml/badge.svg)](https://github.com/[username]/umi-source-code-analysis/actions/workflows/deploy.yml)
-
 ## 🎯 项目介绍
 
 本项目是一份全面的 UmiJS 源码分析文档，通过深入浅出的方式解析 UmiJS 框架的核心架构、设计模式和实现细节。适合想要深入理解 UmiJS 内部机制的开发者阅读。
