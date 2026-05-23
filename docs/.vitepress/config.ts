@@ -6,17 +6,12 @@ export default defineConfig({
   description: '深入理解 UmiJS 框架设计与实现',
   
   base: '/umi-source-code-analysis/',
-  
-  head: [
-    ['link', { rel: 'icon', href: '/umi-source-code-analysis/logo.svg' }]
-  ],
 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     logo: {
       src: '/logo.svg',
-      width: 24,
-      height: 24
+      width: 32,
+      height: 32
     },
 
     nav: [
