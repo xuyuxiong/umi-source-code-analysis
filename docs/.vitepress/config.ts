@@ -8,7 +8,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: '/umi-source-code-analysis/logo.svg' }]
   ],
   themeConfig: {
-    logo: '/umi-source-code-analysis/logo.svg',
+    logo: '/logo.svg',
     nav: [
       { text: '指南', link: '/guide/overview' },
       { text: '架构', link: '/architecture/overview' },
