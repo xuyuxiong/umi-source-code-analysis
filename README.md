@@ -148,7 +148,7 @@ pnpm docs:preview
 
 ## 📝 关于本文档
 
-本文档基于 UmiJS **v5.x** 版本源码编写，所有代码示例和分析均基于本地源码`/Users/xilin/Documents/sources/umi/`。
+本文档基于 UmiJS **v4.6.55** 版本源码编写，所有代码示例和分析均基于本地源码`/Users/xilin/Documents/sources/umi/`。
 
 文档特点：
 - ✅ **源码驱动**：所有内容基于实际源码，包含准确的源码路径和代码片段
