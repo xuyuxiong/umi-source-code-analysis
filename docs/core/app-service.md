@@ -510,6 +510,5 @@ _profilePlugins() {
 深入理解 `Service` 类是掌握 UmiJS 框架的关键。
 
 ---
-
 📖 **上一篇**: [Preset 机制](/architecture/preset-mechanism)
-📖 **下一篇**: [命令行架构](/core/cli-architecture)
+📖 **下一篇**: [命令行架构](/core/cli)
