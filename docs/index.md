@@ -27,8 +27,8 @@ features:
     
   - icon: 🔧
     title: 核心篇
-    details: 解析 Service 核心服务、命令行、MFSU、打包器等核心模块
-    link: /core/app-service
+    details: 解析 CLI、配置加载、路由生成、MFSU、打包器等核心模块
+    link: /core/cli
     
   - icon: 🚀
     title: 进阶篇
@@ -48,7 +48,7 @@ features:
   - icon: ⚡
     title: 构建加速
     details: MFSU 模块联邦加速原理与实现
-    link: /core/mfsu-implementation
+    link: /core/mfsu
 ---
 
 <script setup>

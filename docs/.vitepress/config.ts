@@ -55,17 +55,17 @@ export default defineConfig({
           text: '核心篇',
           items: [
             { text: 'App 服务', link: '/core/app-service' },
-            { text: '命令行架构', link: '/core/cli-architecture' },
+            { text: '命令行架构', link: '/core/cli' },
             { text: '配置加载', link: '/core/config-loading' },
             { text: '路由生成', link: '/core/route-generation' },
-            { text: 'MFSU 实现', link: '/core/mfsu-implementation' },
-            { text: 'Webpack 打包', link: '/core/webpack-bundler' },
-            { text: 'Vite 打包', link: '/core/vite-bundler' },
-            { text: 'ESBuild 打包', link: '/core/esbuild-bundler' },
-            { text: 'React 渲染器', link: '/core/react-renderer' },
+            { text: 'MFSU 实现', link: '/core/mfsu' },
+            { text: 'Webpack 打包', link: '/core/bundler-webpack' },
+            { text: 'Vite 打包', link: '/core/bundler-vite' },
+            { text: 'ESBuild 打包', link: '/core/bundler-esbuild' },
+            { text: 'React 渲染器', link: '/core/renderer-react' },
             { text: '插件开发', link: '/core/plugin-development' },
-            { text: '运行时插件', link: '/core/runtime-plugins' },
-            { text: '服务端插件', link: '/core/server-plugins' },
+            { text: '运行时插件', link: '/core/runtime-plugin' },
+            { text: '服务端插件', link: '/core/buildtime-plugin' },
             { text: '类型系统', link: '/core/type-system' },
             { text: '工具函数', link: '/core/utils' }
           ]
@@ -75,9 +75,9 @@ export default defineConfig({
         {
           text: '进阶篇',
           items: [
-            { text: '源码编译', link: '/advanced/ast-transform' },
+            { text: 'AST 转换', link: '/advanced/ast-transform' },
             { text: 'Micro-frontend', link: '/advanced/micro-frontend' },
-            { text: '性能优化', link: '/advanced/performance-optimization' },
+            { text: '性能优化', link: '/advanced/performance' },
             { text: '自定义打包器', link: '/advanced/custom-bundler' },
             { text: '最佳实践与 FAQ', link: '/advanced/best-practices' }
           ]
