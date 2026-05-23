@@ -3,11 +3,12 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'UmiJS 源码深度解析',
   description: '深入理解企业级前端框架',
+  base: '/umi-source-code-analysis/', // 添加 base 配置
   head: [
-    ['link', { rel: 'icon', href: '/logo.svg' }]
+    ['link', { rel: 'icon', href: '/umi-source-code-analysis/logo.svg' }]
   ],
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/umi-source-code-analysis/logo.svg',
     nav: [
       { text: '指南', link: '/guide/overview' },
       { text: '架构', link: '/architecture/overview' },
